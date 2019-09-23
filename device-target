@@ -1,0 +1,15 @@
+// useful example
+ 
+  if ($(window).width() < 1024) {
+	 $( ".header__item-language" ).insertBefore( "#lang_inject_mobile" );   
+	}
+  
+  
+  $( window ).resize(function() {
+    // position the lang picker when resizing
+  if ($(window).width() < 1024) {
+	 $( ".header__item-language" ).insertBefore( "#lang_inject_mobile" );   
+	} else {
+    $( ".header__item-language" ).insertBefore( "#lang_re_inject" );
+    }
+});
